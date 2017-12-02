@@ -1,7 +1,9 @@
 export class Proyectos {
   id: string;
-  description: string;
-   order: number;
+  name: string;
+  icon: string;
+  startdate: string;
+  numberpeople: string;
   constructor() {
     // code...
   }
