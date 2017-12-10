@@ -18,7 +18,7 @@ export class ProyectosService {
     localStorage.setItem('proyectos', JSON.stringify(this.data));
   }
 
-  findById(id: string) {
+  findById(id: String) {
     return this.data.find(x => x.id === id);
   }
 }
