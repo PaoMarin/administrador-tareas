@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Estados } from '../estados';
-import { EstadosService } from '../estados.service';
+import { EstadosService } from '../estados.service'; 
 
 @Component({
   selector: 'app-estados-crud',
@@ -12,7 +12,7 @@ export class EstadosCrudComponent implements OnInit {
     data: Estados[];
     current_estados: Estados;
     crud_operation = { is_new: false, is_visible: false };
-    constructor(private service: EstadosService) {
+    constructor(private service: EstadosService){
     }
 
   ngOnInit() {

@@ -20,6 +20,7 @@
   	<th>Id</th>
     <th>Description</th>
     <th>Order</th>
+    <th>Proyect</th>
     <th class="text-right">
       <button class="btn btn-success" (click)="new()"><i class="fa fa-plus" aria-hidden="true"></i></button>
       <button class="btn btn-info" (click)="ngOnInit()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
@@ -29,11 +30,12 @@
   	<td>{{row.id}}</td>
     <td>{{row.description}}</td>
     <td>{{row.order}}</td>
+    <td>{{proyectos.id}}</td>
     <td class="text-right">
       <div *ngIf="!row.confirm">
         <button class="btn btn-warning" (click)="edit(row)"><i class="fa fa-pencil" aria-hidden="true"></i></button>
         <button class="btn btn-danger" (click)="row.confirm = true"><i class="fa fa-times" aria-hidden="true"></i></button>
-        <a class="btn btn-info" [routerLink]="['/task-manager/', row.name]">
+        <a class="btn btn-info" [routerLink]="['/dashboard/']">
           <i class="fa fa-eye" aria-hidden="true"></i>
         </a>
       </div>

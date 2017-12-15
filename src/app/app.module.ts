@@ -7,27 +7,32 @@ import { AppComponent } from './app.component';
 import { ProyectosCrudComponent } from './proyectos-crud/proyectos-crud.component';
 import { PersonasCrudComponent } from './personas-crud/personas-crud.component';
 import { EstadosCrudComponent } from './estados-crud/estados-crud.component';
-import { WelcomeComponent } from './welcome/welcome.component';
 import { ProyectosService } from './proyectos.service';
 import { PersonasService } from './personas.service';
 import { EstadosService } from './estados.service';
+import { DashboardService } from './dashboard.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ReporteProyectoComponent } from './reporte-proyecto/reporte-proyecto.component';
+import { ReportePersonaComponent } from './reporte-persona/reporte-persona.component';
+import { ReporteEstadoComponent } from './reporte-estado/reporte-estado.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProyectosCrudComponent,
-    WelcomeComponent,
     PersonasCrudComponent,
     EstadosCrudComponent,
-    DashboardComponent
+    DashboardComponent,
+    ReporteProyectoComponent,
+    ReportePersonaComponent,
+    ReporteEstadoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule
   ],
-  providers: [ProyectosService, PersonasService, EstadosService],
+  providers: [ProyectosService, PersonasService, EstadosService, DashboardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
